@@ -9,10 +9,10 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            generration();
+            GenerateMenu();
         }
 
-        public static void addStudent()
+        public static void AddStudent()
         {
             var student = new Student();
             Console.WriteLine("Please enter student rollNumber");
@@ -26,7 +26,7 @@ namespace ConsoleApp1
             list.Add(student);
         }
 
-        public static void showList()
+        public static void ShowList()
         {
             foreach (var student in list)
             {
@@ -34,7 +34,7 @@ namespace ConsoleApp1
             }
         }
 
-        public static void searchStudent()
+        public static void SearchStudent()
         {
             Console.WriteLine("Please enter search name");
             var searchName = Console.ReadLine();
@@ -49,7 +49,7 @@ namespace ConsoleApp1
             }
         }
 
-        public static void generration()
+        public static void GenerateMenu()
         {
             while (true)
             {
@@ -62,13 +62,13 @@ namespace ConsoleApp1
                 switch (choice)
                 {
                     case 1:
-                        addStudent();
+                        AddStudent();
                         break;
                     case 2:
-                        showList();
+                        ShowList();
                         break;
                     case 3:
-                        searchStudent();
+                        SearchStudent();
                         break;
                     case 4:
                         Environment.Exit(1);
