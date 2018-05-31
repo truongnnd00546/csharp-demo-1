@@ -10,7 +10,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             GenerateMenu();
-            Console.WriteLine("Done......");
+            Console.WriteLine("Done......OKIE    ");
         }
 
         public static void AddStudent()
